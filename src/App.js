@@ -21,6 +21,7 @@ import Chapter3 from "./components/UserLayout/Chapter3";
 import Chapter6 from "./components/UserLayout/Chapter6";
 import Notes from "./components/UserLayout/Notes";
 import AdminNotesControl from "./components/AdminLayout/AdminNotesControl";
+import ServerSetup from "./components/UserLayout/ServerSetup";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/user/CommonLayouts" element={<Chapter5/>}/>
           <Route path="/user/LandingPages" element={<Chapter6/>}/>
           <Route path="/user/IntroductiontoMERNStack" element={<Chapter3/>}/>
+          <Route path="/user/ServerSetup" element={<ServerSetup/>}/>
           <Route path="history" element={<ExamHistory/>}/>
           <Route path="/user/profile" element={<Profile />} />
           <Route path="/user/changepassword" element={<ChangePassword />} />
