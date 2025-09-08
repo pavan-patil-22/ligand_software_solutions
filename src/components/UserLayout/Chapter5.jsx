@@ -452,10 +452,10 @@ reportWebVitals();`
           <h3>Step 1: Create 'components' folder in client/src folder</h3>
           <p>Create a components folder in your React project structure.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture1.png'/>
+            <img src='/c5picture1.png'/>
           </div>
           <div className="image-placeholder">
-            <img src='/chapter5/picture2.png'/>
+            <img src='/c5picture2.png'/>
           </div>
         </div>
 
@@ -463,10 +463,10 @@ reportWebVitals();`
           <h3>Step 2: Create user folders inside components folder</h3>
           <p>Create a folder for each user in your project inside components folder (here we will consider 1 user 'Guest' we will create a folder 'guestLayout').</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture3.png'/>
+            <img src='/c5picture3.png'/>
           </div>
           <div className="image-placeholder">
-            <img src='/chapter5/picture4.png'/>
+            <img src='/c5picture4.png'/>
           </div>
         </div>
 
@@ -474,7 +474,7 @@ reportWebVitals();`
           <h3>Step 3: Create layout files inside guestLayout folder</h3>
           <p>Create 3 basic layout .jsx files inside guestLayout folder i.e. GuestHeader.jsx, GuestFooter.jsx and GuestLayout.jsx.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture5.png'/>
+            <img src='/c5picture5.png'/>
           </div>
         </div>
 
@@ -505,7 +505,7 @@ reportWebVitals();`
             </button>
           </div>
           <div className="image-placeholder">
-            <img src='/chapter5/picture6.png'/>
+            <img src='/c5picture6.png'/>
           </div>
         </div>
 
@@ -513,7 +513,7 @@ reportWebVitals();`
           <h3>Step 5: Create GuestNavbar.jsx with styling</h3>
           <p>After successful installation create GuestNavbar.jsx file in guestLayout folder to design navbar component.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture7.png'/>
+            <img src='/c5picture7.png'/>
           </div>
           <p>Code for GuestNavbar.jsx:</p>
           {renderCodeBlock(codeBlocks[0], 0)}
@@ -523,7 +523,7 @@ reportWebVitals();`
           <h3>Step 6: Create GuestHeader.jsx</h3>
           <p>Open GuestHeader.jsx, type 'rafc' and hit enter key to get basic snippet.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture8.png'/>
+            <img src='/c5picture8.png'/>
           </div>
           <p>Code for GuestHeader.jsx:</p>
           {renderCodeBlock(codeBlocks[1], 1)}
@@ -539,18 +539,18 @@ reportWebVitals();`
           <h3>Step 8: Create GuestLayout.jsx</h3>
           <p>Open GuestLayout.jsx and import GuestHeader.jsx and GuestFooter.jsx components.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture9.png'/>
+            <img src='/c5picture9.png'/>
           </div>
           <p>Code for GuestLayout.jsx:</p>
           {renderCodeBlock(codeBlocks[3], 3)}
           <p>In the above code we are importing Outlet from react-router-dom this Outlet is a special component where all child components will be rendered within this Outlet component.</p>
           <h4>How Outlet works:</h4>
           <div className="image-placeholder">
-            <img src='/chapter5/picture10.png'/>
+            <img src='/c5picture10.png'/>
           </div>
           <p>All Child Elements like Home, About, Services, Contact, Register and Login are Child components of GuestLayout so All child components will be rendered between Guest Header and Guest Footer.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture11.png'/>
+            <img src='/c5picture11.png'/>
           </div>
         </div>
 
@@ -558,7 +558,7 @@ reportWebVitals();`
           <h3>Step 9: Include GuestLayout in App.js</h3>
           <p>After writing code into GuestLayout.jsx you must include that into App.js.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture12.png'/>
+            <img src='/c5picture12.png'/>
           </div>
           <p>Code for App.js:</p>
           {renderCodeBlock(codeBlocks[4], 4)}
@@ -573,13 +573,13 @@ reportWebVitals();`
           <h3>Step 10: Configure BrowserRouter in index.js</h3>
           <p>Open index.js file and import BrowserRouter and wrap it with &lt;App/&gt;.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture13.png'/>
+            <img src='/c5picture13.png'/>
           </div>
           <p>Code for index.js:</p>
           {renderCodeBlock(codeBlocks[5], 5)}
           <p>Now open your browser and check output should be like below:</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture14.png'/>
+            <img src='/c5picture14.png'/>
           </div>
         </div>
 
@@ -587,7 +587,7 @@ reportWebVitals();`
           <h3>Step 11: Create page components</h3>
           <p>Create files inside 'guestLayout' folder for Home, About, Products, Signup and Login.</p>
           <div className="image-placeholder">
-            <img src='/chapter5/picture15.png'/>
+            <img src='/c5picture15.png'/>
           </div>
           <p>Now Check Output like this you can create Common Layout for all users of your project. We will start designing <strong>landing pages</strong> (Home, About, Contact, Services and other pages) in next chapter.</p>
         </div>
