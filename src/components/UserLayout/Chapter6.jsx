@@ -188,7 +188,7 @@ export default Home;`, 'homeCode')}
         <p><strong>App.js:</strong></p>
        
         <div className="image-placeholder">
-         <img src="/c6picture1.png" alt="" />
+         <img src="c6picture1.png" alt="" />
         </div>
        
         <p><strong>Code:</strong></p>
