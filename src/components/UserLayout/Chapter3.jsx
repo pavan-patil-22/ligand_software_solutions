@@ -312,7 +312,13 @@ const Chapter3 = () => {
         },
         {
           subtitle: "Salary and Demand",
-          text: "Full-stack developers in MERN stack are highly sought after due to their ability to handle both client-side and server-side development. The salary for a MERN stack developer varies depending on experience, but typically ranges from $50,000 to $120,000 annually in the United States. The demand for MERN stack developers is growing as more companies adopt this technology stack to create modern, fast, and scalable web applications."
+          text: "Full-stack developers in MERN stack are highly sought after due to their ability to handle both client-side and server-side development. The salary for a MERN stack developer varies depending on experience, but typically ranges from ₹50,000 to ₹120,000 annually in the United States. The demand for MERN stack developers is growing as more companies adopt this technology stack to create modern, fast, and scalable web applications."
+        },
+        {
+          image: {
+            src: ("/salaryanddemand.png"),
+            caption: "Sample MERN Stack Syllabus Overview"
+          }
         }
       ]
     },
@@ -335,6 +341,10 @@ const Chapter3 = () => {
         },
         {
           subtitle: "Flow of Data in a MERN Stack Application:",
+          image: {
+            src: ("/flowof data.png"),
+            caption: "Sample MERN Stack Syllabus Overview"
+          },
           list: {
             items: [
               "User Interaction (Frontend - React.js): The user interacts with the frontend (React.js), such as clicking a button or filling a form. React sends requests (e.g., using Axios or Fetch) to the backend (Node.js/Express) to fetch or send data.",
@@ -343,6 +353,7 @@ const Chapter3 = () => {
               "UI Rendering (React.js): Once the data is received by React (e.g., through state updates), React renders the data in the UI. React updates only the components that are changed based on the new data, making the UI dynamic and responsive."
             ]
           }
+          
         },
         {
           
