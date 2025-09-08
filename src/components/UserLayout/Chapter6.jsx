@@ -188,7 +188,7 @@ export default Home;`, 'homeCode')}
         <p><strong>App.js:</strong></p>
        
         <div className="image-placeholder">
-         <img src="/c6picture1.png" alt="App.js" />
+         <img src="\c6Picture1.png" alt="App.js" />
         </div>
        
         <p><strong>Code:</strong></p>
@@ -386,7 +386,7 @@ import Contact from './Contact';`}</pre>
         <p>This code gives a nice, clean layout with an image carousel at the top, followed by sections like "About," "Services," and "Contact."</p>
 
         <div className="image-placeholder">
-          <img src="/c6picture2.png" alt="" />
+          <img src="/c6Picture2.png" alt="" />
         </div>
 
      
@@ -1019,7 +1019,7 @@ export default About;`, 'aboutCode')}
         </div>
 
         <div className="image-placeholder">
-          <img src="/c6picture3.png" alt="" />
+          <img src="/c6Picture3.png" alt="" />
         </div>
 
         
@@ -1520,7 +1520,7 @@ export default Services;`, 'servicesCode')}
         </div>
 
         <div className="image-placeholder">
-          <img src="/c6picture4.png" alt="" />
+          <img src="/c6Picture4.png" alt="" />
         </div>
 
        
@@ -2167,7 +2167,7 @@ export default Contact;`, 'contactCode')}
         </div>
 
         <div className="image-placeholder">
-          <img src="/c6picture5.png" alt="" />
+          <img src="/c6Picture5.png" alt="" />
         </div>
 
         
