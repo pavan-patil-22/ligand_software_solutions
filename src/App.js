@@ -23,6 +23,8 @@ import Notes from "./components/UserLayout/Notes";
 import AdminNotesControl from "./components/AdminLayout/AdminNotesControl";
 import ServerSetup from "./components/UserLayout/ServerSetup";
 import PostmanSetup from "./components/UserLayout/PostmanSetup";
+import UserBackend from "./components/UserLayout/UserBackend";
+import RegistrationFrontend from "./components/UserLayout/RegistrationFrontend";
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           <Route path="/user/IntroductiontoMERNStack" element={<Chapter3/>}/>
           <Route path="/user/ServerSetup" element={<ServerSetup/>}/>
           <Route path="/user/PostmanSetup" element={<PostmanSetup/>}/>
+          <Route path="/user/userbackend" element={<UserBackend/>}/>
+          <Route path="/user/RegistrationFrontend" element={<RegistrationFrontend/>}/>
           <Route path="/user/history" element={<ExamHistory/>}/>
           <Route path="/user/profile" element={<Profile />} />
           <Route path="/user/changepassword" element={<ChangePassword />} />
