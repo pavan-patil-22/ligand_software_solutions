@@ -25,6 +25,7 @@ import ServerSetup from "./components/UserLayout/ServerSetup";
 import PostmanSetup from "./components/UserLayout/PostmanSetup";
 import UserBackend from "./components/UserLayout/UserBackend";
 import RegistrationFrontend from "./components/UserLayout/RegistrationFrontend";
+import LoginFrontend from "./components/UserLayout/LoginFrontend";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/user/PostmanSetup" element={<PostmanSetup/>}/>
           <Route path="/user/userbackend" element={<UserBackend/>}/>
           <Route path="/user/RegistrationFrontend" element={<RegistrationFrontend/>}/>
+          <Route path="/user/loginfrontend" element={<LoginFrontend/>}/>
           <Route path="/user/history" element={<ExamHistory/>}/>
           <Route path="/user/profile" element={<Profile />} />
           <Route path="/user/changepassword" element={<ChangePassword />} />
