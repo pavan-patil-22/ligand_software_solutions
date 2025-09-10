@@ -57,7 +57,12 @@ const Login = () => {
       // Save user details in localStorage (optional)
       localStorage.setItem("user", JSON.stringify(res.data.user));
       // Navigate to /user after success
-      navigate("/user");
+      if(res.data.user.role==="admin"){
+        navigate("/admin")
+      }
+      else if(res.data.user.role==="user"){
+        navigate("/user")
+      }
       setFormData({ email: "", password: "" });
       setValidated(false);
     } catch (err) {
