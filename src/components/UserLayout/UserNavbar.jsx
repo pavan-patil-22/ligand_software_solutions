@@ -26,14 +26,16 @@ const UserNavbar = () => {
         <div className="navbar-brand">
           <NavLink to="/" className="brand-link">
             <div className="logo-container">
-              <img 
+              <img
                 src="/logo2.jpg" // Replace with your logo path
                 alt="Ligand Software Solutions Logo"
                 className="logo-image"
               />
               <span className="logo-text-container">
                 <span className="logo-gradient">Ligand Software Solutions</span>
-                <span className="logo-subtitle">Exclusive Software for Innovative Minds</span>
+                <span className="logo-subtitle">
+                  Exclusive Software for Innovative Minds
+                </span>
               </span>
             </div>
           </NavLink>
@@ -63,7 +65,7 @@ const UserNavbar = () => {
               }
               onClick={() => setIsOpen(false)}
             >
-              <FaLaptopCode className="nav-icon"/>
+              <FaLaptopCode className="nav-icon" />
               <span>Exams</span>
             </NavLink>
 
@@ -74,7 +76,7 @@ const UserNavbar = () => {
               }
               onClick={() => setIsOpen(false)}
             >
-              <TbHistoryToggle className="nav-icon"/>
+              <TbHistoryToggle className="nav-icon" />
               <span>History</span>
             </NavLink>
 
@@ -85,10 +87,10 @@ const UserNavbar = () => {
               }
               onClick={() => setIsOpen(false)}
             >
-              <FaBook className="nav-icon"/>
+              <FaBook className="nav-icon" />
               <span>Notes</span>
             </NavLink>
-            
+
             <NavLink
               to="/user/changepassword"
               className={({ isActive }) =>
@@ -96,16 +98,28 @@ const UserNavbar = () => {
               }
               onClick={() => setIsOpen(false)}
             >
-              <MdOutlinePublishedWithChanges className="nav-icon"/>
+              <MdOutlinePublishedWithChanges className="nav-icon" />
               <span>Change Password</span>
             </NavLink>
-            
+
             <NavLink
               to="/"
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active" : ""}`
               }
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                // ✅ clear only the keys you set
+                localStorage.removeItem("token");
+                localStorage.removeItem("userId");
+                localStorage.removeItem("username");
+                localStorage.removeItem("usn");
+                localStorage.removeItem("role");
+
+                // Or if you want to clear everything:
+                // localStorage.clear();
+
+                setIsOpen(false);
+              }}
             >
               <FaSignInAlt className="nav-icon" />
               <span>Logout</span>
@@ -268,7 +282,7 @@ const UserNavbar = () => {
           .navbar {
             padding: 0.6rem 1rem;
           }
-          
+
           .navbar-toggle {
             display: flex;
             align-items: center;
@@ -337,7 +351,7 @@ const UserNavbar = () => {
           .logo-gradient {
             font-size: 1.1rem;
           }
-          
+
           .logo-subtitle {
             font-size: 0.65rem;
           }
@@ -370,7 +384,7 @@ const UserNavbar = () => {
         .navbar-menu.active .nav-link:nth-child(3) {
           animation-delay: 0.3s;
         }
-        
+
         .navbar-menu.active .nav-link:nth-child(4) {
           animation-delay: 0.4s;
         }
@@ -380,8 +394,3 @@ const UserNavbar = () => {
 };
 
 export default UserNavbar;
-
-
-
-
-
