@@ -28,6 +28,7 @@ import RegistrationFrontend from "./components/UserLayout/RegistrationFrontend";
 import LoginFrontend from "./components/UserLayout/LoginFrontend";
 import ItemBackend from "./components/UserLayout/ItemBackend";
 import ItemFrontend from "./components/UserLayout/ItemFrontend";
+import RoleBasedNotes from "./components/UserLayout/RoleBasedNotes";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path="/user/loginfrontend" element={<LoginFrontend/>}/>
           <Route path="/user/itembackend" element={<ItemBackend/>}/>
           <Route path="/user/itemfrontend" element={<ItemFrontend/>}/>
+          <Route path="/user/rolebasednotes" element={<RoleBasedNotes/>}/>
           <Route path="/user/history" element={<ExamHistory/>}/>
           <Route path="/user/profile" element={<Profile />} />
           <Route path="/user/changepassword" element={<ChangePassword />} />
