@@ -25,8 +25,16 @@ export default function ExamHistory() {
         const res = await axios.get(
           `https://ligand-software-solutions-63g6.onrender.com/api/attempts/student/${studentId}`
         );
-        setAttempts(res.data);
-        console.log("Exam attempts:", res.data);
+        // Filter out today's exams
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const filtered = res.data.filter(attempt => {
+          const attemptDate = new Date(attempt.createdAt);
+          attemptDate.setHours(0, 0, 0, 0);
+          return attemptDate.getTime() !== today.getTime();
+        });
+        setAttempts(filtered);
+        console.log("Exam attempts (excluding today):", filtered);
       } catch (err) {
         console.error(err);
       } finally {
