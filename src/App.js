@@ -29,6 +29,7 @@ import LoginFrontend from "./components/UserLayout/LoginFrontend";
 import ItemBackend from "./components/UserLayout/ItemBackend";
 import ItemFrontend from "./components/UserLayout/ItemFrontend";
 import RoleBasedNotes from "./components/UserLayout/RoleBasedNotes";
+import ViewItemFrontendNotes from "./components/UserLayout/ViewItemFrontendNotes";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           <Route path="/user/itembackend" element={<ItemBackend/>}/>
           <Route path="/user/itemfrontend" element={<ItemFrontend/>}/>
           <Route path="/user/rolebasednotes" element={<RoleBasedNotes/>}/>
+          <Route path="/user/viewitemfrontendnotes" element={<ViewItemFrontendNotes/>}/>
           <Route path="/user/history" element={<ExamHistory/>}/>
           <Route path="/user/profile" element={<Profile />} />
           <Route path="/user/changepassword" element={<ChangePassword />} />
